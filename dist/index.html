@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./css/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Document</title>
+    <script>
+    function opennav() {
+        let elem = document.getElementById("nav-links")
+        console.log(elem.classList.contains("-left-full"))
+        if (elem.classList.contains("-left-full")) {
+            elem.classList.add("left-0")
+            elem.classList.remove("-left-full")
+            console.log(true)
+        } else{
+            elem.classList.add("-left-full")
+            elem.classList.remove("left-0")
+            console.log(false)
+        }
+
+}
+    </script>
+</head>
+<body>
+    <header id="header" class="bg-yellow-300  w-full">
+        <nav class="fixed flex flex-col md:flex-row w-full bg-orange-300">
+            <div onclick="opennav()" class="fixed p-4 md:hidden">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo flex justify-center bg-orange-300">
+            <img src="./images/logo.png" class="w-[40%] p-2 sm:w-[30%] md:w-[60%] md:p-2 " alt="">
+            
+            </div>
+            <div id="nav-links" class="nav-links flex justify-end md:items-center flex-col md:flex-row w-full md:w-[90%] fixed top-16 -left-full md:left-0 md:top-0 transition-all duration-500">
+                <a class="nav-links-every" href="">Home</a>
+                <a class="nav-links-every" href="">Products</a>
+                <a class="nav-links-every" href="">About</a>
+                <a class="nav-links-every" href="">Contact</a>
+                <a class="nav-links-every" href="">Acount</a>
+                <a class="nav-links-every" href="">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="md:h-full flex flex-col md:flex-row p-3 items-center justify-center bg-orange-300 md:py-5">
+            <div class="ml-9 mt-20">
+                <h1 class="font-[Poppins] font-extrabold text-5xl p-5 px-7">
+                    Give Your Workout A New Style !
+                </h1>
+                <p class="px-7 text-slate-500 font-[poppins]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate delectus quia deleniti omnis, repudiandae error nobis repellat corporis excepturi eaque rem provident quam adipisci distinctio et aut, illum perspiciatis repellendus!
+                </p>
+                <button class="px-7 py-2 bg-orange-400 text-white rounded-full m-5 mx-7 hover:bg-orange-700">
+                    Explore Now
+                    <i class="fa fa-long-arrow-right"></i>
+                </button>
+            </div>
+            <img src="./images/image1.png" class="md:w-[42%] w-[70%] py-10" alt="">
+        </div>
+    </header>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10">
+        <img src="./images/category-1.jpg" alt="" class="category">
+        <img src="./images/category-2.jpg" alt="" class="category">
+        <img src="./images/category-1.jpg" alt="" class="category">
+    </section>
+    <section class="grid gap-5 px-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="products-card">
+            <img src="./images/product-1.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-2.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-3.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-4.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-5.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-6.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-7.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="products-card">
+            <img src="./images/product-8.jpg" alt="">
+            <p>Red Printed T-Shirt</p>
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </section>
+    <section class="my-5 py-10 md:py-20 bg-orange-200 flex flex-col justify-center items-center md:flex-row">
+        <img src="./images/exclusive.png" class="w-[50%]" alt="">
+        <div class="py-5 my-5 flex flex-col justify-center items-center">
+            <h1 class="text-center text-
+            
+            slate-700">
+                Exclusive Available on RedStore
+            </h1>
+            <h1 class="font-[900] text-5xl text-center py-5 px-5">Smart Brand 4</h1>
+            <h1 class="text-left text-slate-700 px-20 ">
+                The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.
+            </h1>
+            <button class="px-7 py-2 bg-orange-400 text-white rounded-full m-5 mx-7 hover:bg-orange-700">
+                Buy Now
+                <i class="fa fa-long-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+    <section id="testimonials" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-10">
+        <div class="flex flex-col items-center justify-center py-5 px-3 bg-slate-200 rounded-lg">
+            <i class="fa fa-quote-left m-5 text-orange-500"></i>
+            <p class="text-slate-600 text-sm px-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam dolore possimus dignissimos id. Reprehenderit dolores sed voluptatibus beatae necessitatibus rerum nostrum cumque at, mollitia officiis quae delectus, et perferendis.</p>
+            <div class="flex justify-center items-center p-2">
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star-half-o border text-orange-500"></i>
+            </div>
+            <img src="./images/user-2.png" class="w-[100px] rounded-full my-2 mx-3 p-3" alt="">
+            <p class="font-bold text-xl text-slate-800">Mike Smith</p>
+        </div>
+        <div class="flex flex-col items-center justify-center py-5 px-3 bg-slate-200 rounded-lg">
+            <i class="fa fa-quote-left m-5 text-orange-500"></i>
+            <p class="text-slate-600 text-sm px-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam dolore possimus dignissimos id. Reprehenderit dolores sed voluptatibus beatae necessitatibus rerum nostrum cumque at, mollitia officiis quae delectus, et perferendis.</p>
+            <div class="flex justify-center items-center p-2">
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star-half-o border text-orange-500"></i>
+            </div>
+            <img src="./images/user-2.png" class="w-[100px] rounded-full my-2 mx-3 p-3" alt="">
+            <p class="font-bold text-xl text-slate-800">Mike Smith</p>
+        </div>
+        <div class="flex flex-col items-center justify-center py-5 px-3 bg-slate-200 rounded-lg">
+            <i class="fa fa-quote-left m-5 text-orange-500"></i>
+            <p class="text-slate-600 text-sm px-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam dolore possimus dignissimos id. Reprehenderit dolores sed voluptatibus beatae necessitatibus rerum nostrum cumque at, mollitia officiis quae delectus, et perferendis.</p>
+            <div class="flex justify-center items-center p-2">
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star text-orange-500"></i>
+                <i class="fa fa-star-half-o border text-orange-500"></i>
+            </div>
+            <img src="./images/user-2.png" class="w-[100px] rounded-full my-2 mx-3 p-3" alt="">
+            <p class="font-bold text-xl text-slate-800">Mike Smith</p>
+        </div>
+    </section>
+    <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-center p-10 py-5">
+        <img src="./images/logo-coca-cola.png" class="p-3 hover:bg-orange-500 transition-all duration-200 rounded" ></img>
+        <img src="./images/logo-godrej.png" class="p-3 hover:bg-orange-500 transition-all duration-200 rounded" ></img>
+        <img src="./images/logo-oppo.png" class="p-3 hover:bg-orange-500 transition-all duration-200 rounded" ></img>
+        <img src="./images/logo-paypal.png" class="p-3 hover:bg-orange-500 transition-all duration-200 rounded" ></img>
+        <img src="./images/logo-philips.png" class="p-3 hover:bg-orange-500 transition-all duration-200 rounded" ></img>
+    </section>
+    <footer class="bg-black px-5 py-10 grid place-items-center items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+            <h1 class="text-white font-bold text-center">
+                Download our App
+            </h1>
+            <p class="text-slate-500 text-center text-sm px-20">Download App for Android and IOS mobile phone</p>
+            <div class="flex justify-center gap-3 p-3">
+                <img src="./images/play-store.png" class="w-[30%]" alt="">
+                <img src="./images/app-store.png" class="w-[30%]" alt="">
+            </div>
+        </div>
+        <div class="text-center flex justify-center flex-col items-center p-3 gap-5">
+            <img src="./images/logo-white.png" class="w-52" alt="">
+            <p class="text-slate-500 text-sm">Our Propous Is to Sustainablley Make In Pleasure and Benefits of Sports Accesible to many</p>
+        </div>
+        <div class="footer-links">
+            <h1>Useful Links</h1>
+            <a href="">Coupons</a>
+            <a href="">Blog Post</a>
+            <a href="">Return Policy</a>
+            <a href="">Jhon Affilate</a>
+        </div>
+        <div class="footer-links">
+            <h1>Useful Links</h1>
+            <a href="">Coupons</a>
+            <a href="">Blog Post</a>
+            <a href="">Return Policy</a>
+            <a href="">Jhon Affilate</a>
+        </div>
+    </footer>
+</body>
+</html>
